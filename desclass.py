@@ -144,13 +144,11 @@ class DES:
         return l[y:] + l[:y]
 
     def list2str(self, list):
-        res = list.copy();
-        res.reverse()
-        return (str(res)
-                .replace("True", "1")
-                .replace("False", "0")
-                .replace(" ", "")
-                .replace(",", "")
+        return (str(list[::-1])
+            .replace("True", "1")
+            .replace("False", "0")
+            .replace(" ", "")
+            .replace(",", "")
         )
 
 '''
