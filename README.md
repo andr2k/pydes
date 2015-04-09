@@ -1,2 +1,2 @@
 # pydes
-Primitive DES implementation written on Python
+Primitive DES implementation written in Python
