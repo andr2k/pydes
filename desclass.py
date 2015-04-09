@@ -94,10 +94,7 @@ class DES:
         return res
 
     def permutation(self, input, table):
-        res = list();
-        for i in table:
-            res = [input[-i]] + res
-        return res
+        return [input[-i] for i in reversed(table)]
 
     def K(self, n):
         key = self.bytes2list(self.key)
