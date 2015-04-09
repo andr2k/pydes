@@ -34,7 +34,7 @@ class DES:
         self._data = data
         self.key = key
 
-    def encode(self, cycles):
+    def encode(self, cycles=16):
         self.dataList = self.permutation(self.dataList, self.tables.ip)
         self.feistel_network(cycles=cycles)
         self.dataList = self.permutation(self.dataList, self.tables.pi)
